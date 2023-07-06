@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: "roboto";
+    src: url(../fuentes/roboto/Roboto-Black.ttf);
+}
+
+#ret{ font-family: "roboto";
+}
+
+@font-face {
+    font-family: "static";
+    src: url(../fuentes/static/Fredoka-Light.ttf);
+}
+
+#p2p{ font-family: "static";
+}

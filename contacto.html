@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <script src="https://kit.fontawesome.com/12b9454c70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagenes/vinylico-sinfondo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><img src="imagenes/LOGO_Grande_Transparente.png" alt=""id="logo"></a>
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="producto.html">Productos</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+
+    <h1 style="font-family: Bruno Ace SC;">CONTACTO</h1>
+    <p>
+        Nos encantaría trabajar con ustedes en su próximo proyecto de personalización de ropa.
+        <b>¡Contáctenos hoy para obtener mas información!
+
+          <form action="" method="" id="formularioo" name="formularioo" onsubmit="return validarFormulario ()">
+             <div class="form">
+             <div class="contacto">
+                <i class="fa-solid fa-user"></i><label for="firstname">Nombre: </label>
+                <input size="30" type="text" id="firstname" name="firstname" placeholder="Ingrese su nombre aquí..."><br><br>
+                <i class="fa-solid fa-user"></i><label for="lastname">Apellido:</label> <input size="30" type="text" id="lastname"name="lastname" placeholder="Ingrese su apellido aquí..."><br><br>
+                <i class="fa-solid fa-phone"></i><label for="telefono">Teléfono: </label> <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono aquí..."> <br><br>
+                <i class="fa-solid fa-envelope"></i><label for="mail">Mail: </label> <input type="email" id="mail" name="mail" placeholder="Ingrese su mail aquí..."><br><br> 
+                <i class="fa-solid fa-comment"></i><label for="mensaje">Mensaje</label><br><br><textarea placeholder="Ingrese su mensaje aquí..." id="message-input" cols="50" rows="10"></textarea><br>
+                <input type="submit" value="Enviar" class="btn" id="botonenviar">
+               </form>
+            </div>
+            
+
+    </p>
+
+
+    <!-- Acá va formulario de contacto -->
+<div class="iframe">
+  <p> Nuestra Ubicación <br><br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.1564006532635!2d-68.84410952887907!3d-32.88989705844602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091bab56ccbd%3A0x7430a2136d2c5271!2sPatricias%20Mendocinas%201102%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1683331912291!5m2!1ses-419!2sar"
+        width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></p></iframe></div>
+  </div>
+<script src="js/formulario.js"></script>
+</body>
+<footer>
+    <a href="index.html" target="_blank">Volver al Inicio</a>
+</footer>
+
+</html>
