@@ -25,15 +25,13 @@ ma = Marshmallow(app)
 class Producto(db.Model):
     id =db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(100))
-    precio = db.Column(db.Integer)
-    stock = db.Column(db.Integer)
-    imagen = db.Column(db.String(400))
+    cantidad = db.Column(db.Integer)
+    direccion = db.Column(db.String(400))
 
-    def __init__(self,nombre,precio,stock,imagen):
+    def __init__(self,nombre,cantidad,direccion):
         self.nombre = nombre
-        self.precio = precio
-        self.stock = stock
-        self.imagen = imagen 
+        self.cantidad = cantidad
+        self.direccion = direccion
 
 
 # CÓDIGO PARA CREAR LAS TABLAS DEFINIDAS EN LAS CLASES
@@ -43,7 +41,7 @@ with app.app_context():
 # CREAR UNA CLASE  ProductoSchema, DONDE SE DEFINEN LOS CAMPOS DE LA TABLA
 class ProductoSchema(ma.Schema):
     class Meta:
-        fields=('id','nombre','precio','stock','imagen')
+        fields=('id','nombre','cantidad','direccion')
 
 
 # DIFERENCIAR CUANDO SE TRANSFORME UN DATO O UNA LISTA DE DATOS
@@ -79,11 +77,11 @@ def create_productos():
 }
     """
     nombre = request.json['nombre']
-    precio = request.json['precio']
-    stock = request.json['stock']
-    imagen = request.json['imagen']
+    cantidad = request.json['cantidad']
+    direccion = request.json['direccion']
 
-    new_producto = Producto(nombre, precio, stock, imagen)
+
+    new_producto = Producto(nombre, cantidad, direccion)
     db.session.add(new_producto)
     db.session.commit()
 
@@ -120,15 +118,14 @@ def update_producto(id):
  
     #  Recibir los datos a modificar
     nombre=request.json['nombre']
-    precio=request.json['precio']
-    stock=request.json['stock']
-    imagen=request.json['imagen']
+    cantidad=request.json['cantidad']
+    direccion=request.json['direccion']
+    
 
     # Del objeto resultante de la consulta modificar los valores  
     producto.nombre=nombre
-    producto.precio=precio
-    producto.stock=stock
-    producto.imagen=imagen
+    producto.cantidad=cantidad
+    producto.direccion=direccion
 #  Guardar los cambios
     db.session.commit()
 # Para ello, usar el objeto producto_schema para que convierta con                     # jsonify el dato recién eliminado que son objetos a JSON  
