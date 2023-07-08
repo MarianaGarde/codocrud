@@ -48,13 +48,9 @@
                                 <tr v-for="producto in productos" class="">
                                     <td scope="row">{{producto.id}}</td>
                                     <td>{{producto.nombre}}</td>
-                                    <td>{producto.cantidad}</td>
-                                    <td>{producto.direccion}</td>
-                                    <td>
-                                        <img width="60" :src="producto.imagen" :alt="producto.nombre">
-
-
-                                    </td>
+                                    <td>{{producto.cantidad}}</td>
+                                    <td>{{producto.direccion}}</td>
+                                    
                                     <td>
                                         <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)"    >Eliminar</button>
                                         

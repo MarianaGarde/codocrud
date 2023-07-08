@@ -26,7 +26,8 @@ function guardar() {
             console.log("creado")
             alert("Grabado")
             // Devuelve el href (URL) de la página actual
-            window.location.href = "./compras.html"; 
+            window.location.href = "compras.html";
+            
             // Handle response we get from the API
         })
         .catch(err => {
