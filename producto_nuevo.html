@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCTOS</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="shortcut icon" href="imagenes/vinylico-sinfondo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+  
+      <ul>
+        <a href="index.html"><img src="imagenes/LOGO_Grande_Transparente.png" alt=""id="logo"></a>
+        <li><a href="index.html">Nosotros</a></li>
+        <li><a href="producto.html">Productos</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  
+    </nav>
+    <h1 style="font-family: Bruno Ace SC;">Nueva Compra</h1>
+
+<div class="container">
+    <form  style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+      <h1>Alta de Producto</h1>
+      <div class="mb-3">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+      </div>
+      <div class="mb-3">
+        <label for="precio">Precio</label>
+        <input type="number" name="precio" id="precio">
+      </div>
+      <div class="mb-3">
+        <label for="stock">Stock</label>
+        <input type="number" name="stock" id="stock">
+      </div>
+      <div class="mb-3">
+        <label for="imagen">Imagen</label>
+        <input type="text" name="imagen" id="imagen">
+      </div>
+     
+        <button type="button" class="btn btn-success" onclick="guardar()">Grabar</button>
+    </form>
+
+
+  </div>
+</body>
+<footer>
+  <a href="index.html" target="_blank">Volver al Inicio</a>
+</footer>
+
+</html>
