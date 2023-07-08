@@ -15,7 +15,7 @@ function guardar() {
         cantidad: c,
         direccion: d,
     }
-    let url = "http://localhost:5000/productos"
+    let url = "https://marianagarde.pythonanywhere.com/productos"
     var options = {
         body: JSON.stringify(producto),
         method: 'POST',
