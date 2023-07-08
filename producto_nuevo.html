@@ -37,24 +37,27 @@
     <h1 style="font-family: Bruno Ace SC;">Nueva Compra</h1>
 
 <div class="container">
-    <form  style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-      <h1>Tu Compra</h1>
+    
+      
+      <div class="compranu">
+        <h1>Tu Compra</h1>
       <div class="mb-3">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre">
-      </div>
+      </div><br>
       <div class="mb-3">
         <label for="cantidad">Cantidad</label>
         <input type="number" name="cantidad" id="cantidad">
-      </div>
+      </div><br>
       <div class="mb-3">
         <label for="direccion">Dirección</label>
         <input type="text" name="direccion" id="direccion">
+      </div><br><br>
+      <button type="button" class="btn btn-success" onclick="guardar()">Guardar</button>
       </div>
-      
       </div>
      
-        <button type="button" class="btn btn-success" onclick="guardar()">Guardar</button>
+        
     </form>
 
 

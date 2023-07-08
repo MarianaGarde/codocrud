@@ -88,7 +88,7 @@
   #cuatro:hover{
     transform: scale(1.2, 1.2);
   }
-  .contacto{
+  .contacto, .compranu{
     padding-top: 20px;
     padding-left: 20px;
     background-color: rgb(248, 236, 174);
@@ -210,7 +210,7 @@
     #cuatro:hover{
       transform: scale(1.2, 1.2);
     }
-    .contacto{
+    .contacto, .compranu{
       padding-top: 20px;
       padding-left: 30px;
       background-color: rgb(248, 137, 137);
@@ -335,7 +335,7 @@
     grid-auto-rows: minmax(100px, auto);
     padding-top: 20px;
   }
-  .contacto{
+  .contacto, .compranu{
     grid-column: 1;
     grid-row: 1;
     margin-top: 10px;
