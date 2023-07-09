@@ -62,8 +62,9 @@
     text-align: center;
   }
 
-  .buttom1 {
+  button {
     color: rgb(2, 2, 2);
+    border-radius: 5px;
     text-align: center;
   }
 
@@ -221,8 +222,9 @@
     text-align: center;
   }
 
-  .buttom1 {
+  button {
     color: rgb(2, 2, 2);
+    border-radius: 5px;
     text-align: center;
   }
 
@@ -323,7 +325,7 @@
   img {
     width: 200px;
     height: 200px;
-    background-color: rgb(255, 153, 150);
+    background-color: rgb(255, 153, 117);
     border-radius: 5px;
     margin: 10px;
   }
@@ -351,7 +353,7 @@
   h1 {
     color: rgb(10, 10, 10);
     text-align: center;
-    font-family: Bruno Ace SC;"
+    font-family: Bruno Ace SC;
   }
   h3 {
     text-align: justify;
@@ -375,8 +377,9 @@
 
   button {
     color: rgb(2, 2, 2);
-    background-color: aqua;
+    border-radius: 5px;
     text-align: center;
+    
 }
 
 body {
@@ -469,22 +472,6 @@ footer {
   font-family: 'Montserrat';
 }
 
-nav {
-  display: inline-block;
-  font-family: 'Montserrat';
-  font-size: medium;
-  background-color: rgb(255, 153, 117);
-  text-decoration: none;
-  width: 100%;
-  word-spacing: 30pt;
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .galeria img {
   width: 600px;
   height: 250px;
@@ -496,4 +483,5 @@ a {
   margin-right: auto;
   margin-left: auto;
   position: relative;
+}
 }
