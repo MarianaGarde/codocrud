@@ -63,7 +63,7 @@
   }
 
   button {
-    color: rgb(2, 2, 2);
+    color:crimson;
     border-radius: 5px;
     text-align: center;
   }
@@ -375,10 +375,22 @@
     text-align: center;
   }
 
-  button {
-    color: rgb(2, 2, 2);
-    border-radius: 5px;
-    text-align: center;
+  .contenedor_2 button {
+    color:darkblue;
+    background-color:bisque;
+    border-radius: 15px; /*borde redondeado*/
+    text-align: center; 
+    font-size:large;
+    font-weight: bold; /*negrita*/
+    cursor: pointer; /*manito */
+    /*tamaño*/
+    width: 130px;
+    height: 40px;
+    border: 5px;;
+
+    font-family:monospace;
+    text-transform: uppercase;   
+    
     
 }
 
