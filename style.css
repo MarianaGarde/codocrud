@@ -375,10 +375,23 @@
     text-align: center;
   }
 
-  button {
-    color: rgb(2, 2, 2);
-    background-color: aqua;
-    text-align: center;
+  .contenedor_2 button {
+    color:darkblue;
+    background-color:crimson ;
+    border-radius: 15px; /*borde redondeado*/
+    text-align: center; 
+    font-size:large;
+    font-weight: bold; /*negrita*/
+    cursor: pointer; /*manito */
+    /*tamaño*/
+    width: 130px;
+    height: 40px;
+    border: 5px;;
+    
+    font-family:monospace;
+    text-transform: uppercase;   
+    
+    
 }
 
 body {
