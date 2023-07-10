@@ -539,4 +539,56 @@ footer {
   margin-left: auto;
   position: relative;
 }
+table{
+  width: 85%;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table, th, td {
+  border: solid 3px;
+  border-collapse: collapse;
+  font-family: 'Montserrat';
+  padding: 5px;
+  
+}
+table tr:nth-child(even) {
+  background-color: #dadada;
+}
+#colum{
+  height: 50px;
+  background-color: #dadada;
+}
+#acc{
+  width: 300px;
+}
+#elimi{
+  background-color: rgb(43, 91, 249);
+  margin-right: 20px;
+  margin-left: 30px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-family: 'Montserrat';
+  border: none;
+  
+}
+#edi{
+  background-color: rgb(77, 188, 77);
+  margin-left: 20px;
+  border-radius: 5px;
+  text-align: center;
+  
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-family: 'Montserrat';
+  border: none;
+}
 }
