@@ -466,11 +466,12 @@ label {
 .cont_form{
   display: flex;
   justify-content: center;
-  align-items: center ;
+  align-items: justify ;
   margin: 10px;
   flex-direction: column;
   /*background-color: brown; */
   height: 250px;
+  margin-left: 50px;
 
 }
 
@@ -487,7 +488,8 @@ label {
     height: 30px;
     border: 5px;
     font-family:monospace;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    margin-left: 130px;
 }
 
 .mb-3{
@@ -539,11 +541,11 @@ footer {
   margin-left: auto;
   position: relative;
 }
+
 table{
-  width: 85%;
+  width: 100%;
   background-color: white;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 20px;
 }
 
 table, th, td {
@@ -551,8 +553,8 @@ table, th, td {
   border-collapse: collapse;
   font-family: 'Montserrat';
   padding: 5px;
-  
 }
+
 table tr:nth-child(even) {
   background-color: #dadada;
 }
@@ -560,9 +562,15 @@ table tr:nth-child(even) {
   height: 50px;
   background-color: #dadada;
 }
+
 #acc{
   width: 300px;
 }
+
+#direcc{
+  width: 450px;
+}
+
 #elimi{
   background-color: rgb(43, 91, 249);
   margin-right: 20px;
@@ -576,14 +584,13 @@ table tr:nth-child(even) {
   height: 30px;
   font-family: 'Montserrat';
   border: none;
-  
 }
+
 #edi{
   background-color: rgb(77, 188, 77);
   margin-left: 20px;
   border-radius: 5px;
   text-align: center;
-  
   font-weight: bold;
   cursor: pointer;
   width: 100px;

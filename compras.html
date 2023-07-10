@@ -24,10 +24,10 @@
 </head>
 
 <body>
-    
+
     <nav>
         <ul>
-            <a href="index.html"><img src="imagenes/LOGO_Grande_Transparente.png" alt=""id="logo"></a>
+            <a href="index.html"><img src="imagenes/LOGO_Grande_Transparente.png" alt="" id="logo"></a>
             <li><a href="index.html">Nosotros</a></li>
             <li><a href="producto.html">Productos</a></li>
             <li><a href="clientes.html">Clientes</a></li>
@@ -37,19 +37,21 @@
 
     </nav>
     <main>
-        <div id="app" class="container">
+        
             <br>
-            <h1 style="font-family: Bruno Ace SC;">COMPRAS</h1>
-
+            <div>
+<h1 style="font-family: Bruno Ace SC;">COMPRAS</h1></div>
+<div id="app" class="container">
             <section v-if="error">Lo sentimos se produjo un error</section>
             <section v-else>
                 <section v-if="cargando">
                     <div class="spinner-border"></div>
                     <p>Cargando .....</p>
 
+
                 </section>
                 <section v-else>
-                    
+                
                     <div class="table-responsive">
                         <table>
                             <thead>
@@ -57,7 +59,7 @@
                                     <th scope="col">Id</th>
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Cantidad</th>
-                                    <th scope="col">Dirección</th>
+                                    <th scope="col" id="direcc">Dirección</th>
                                     <th scope="col" id="acc">Acciones</th>
                                 </tr>
                             </thead>
@@ -67,11 +69,14 @@
                                     <td>{{producto.nombre}}</td>
                                     <td>{{producto.cantidad}}</td>
                                     <td>{{producto.direccion}}</td>
-                                    
+
                                     <td>
-                                        <button type="button" id="elimi" class="btn btn-danger" v-on:click="eliminar(producto.id)"    >Eliminar</button>
-                                        
-                                        <a class="btn btn-primary" :href="'editar_compra.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&cantidad='+producto.cantidad+'direccion='+producto.direccion"><button id="edi">Editar</button></a>
+                                        <button type="button" id="elimi" class="btn btn-danger"
+                                            v-on:click="eliminar(producto.id)">Eliminar</button>
+
+                                        <a class="btn btn-primary"
+                                            :href="'editar_compra.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&cantidad='+producto.cantidad+'direccion='+producto.direccion"><button
+                                                id="edi">Editar</button></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -80,18 +85,18 @@
                 </section>
             </section>
         </div>
-        </div>
+    
 
-    </main>
+    </main> <br>
     <footer>
-        <!-- place footer here -->
+        <a href="index.html" target="_blank">Volver al Inicio</a>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
-    
+
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script src="./js/compras.js"></script>
+    <script src="js/compras.js"></script>
 </body>
 
 </html>
