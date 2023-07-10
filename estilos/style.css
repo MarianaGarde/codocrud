@@ -371,14 +371,25 @@
   .contenedor_2 {
     text-align: center;
   }
-  .contenedor_3{
+  /* .contenedor_3{
     text-align: center;
-  }
+  } */
+ 
+  .contenedor_2 button {
+    color:darkblue;
+    background-color:bisque;
+    border-radius: 15px; /*borde redondeado*/
+    text-align: center; 
+    font-size:large;
+    font-weight: bold; /*negrita*/
+    cursor: pointer; /*manito */
+    /*tamaño*/
+    width: 130px;
+    height: 40px;
+    border: 5px;;
 
-  button {
-    color: rgb(2, 2, 2);
-    background-color: aqua;
-    text-align: center;
+    font-family:monospace;
+    text-transform: uppercase;       
 }
 
 body {
@@ -438,6 +449,51 @@ label {
   padding: 10px;
   border-radius: 10px;
 }
+.compranu {
+  /*tamaño*/
+  width: 500px;
+  height: 350px;
+}
+
+.compranu h1 {
+  text-align: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+
+}
+.cont_form{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  margin: 10px;
+  flex-direction: column;
+  /*background-color: brown; */
+  height: 250px;
+
+}
+
+.cont_form button {
+    color:black;
+    background-color:bisque;
+    border-radius: 15px; /*borde redondeado*/
+    text-align: center; 
+    font-size: large;
+    font-weight: bold; /*negrita*/
+    cursor: pointer; /*manito */
+    /*tamaño*/
+    width: 120px;
+    height: 30px;
+    border: 5px;
+    font-family:monospace;
+    text-transform: uppercase; 
+}
+
+.mb-3{
+  margin-top: 10 px;
+  font-weight: bold;
+}
 
 .iframe {
   grid-column: 2;
@@ -460,7 +516,7 @@ input {
   border-radius: 5px;
   border-width: 1px;
   height: 22px;
-}
+} 
 
 textarea {
   border-radius: 7px;
